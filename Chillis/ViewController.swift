@@ -17,8 +17,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let CenterTitleTableViewCell =  tableView.dequeueReusableCell(withIdentifier: String(describing: CenterTitleTableViewCell.self),
+        let CenterTitleTableViewCell =  tableView.dequeueReusableCell(withIdentifier: "cell",
         for: indexPath)
+        return CenterTitleTableViewCell
     }
 
 
